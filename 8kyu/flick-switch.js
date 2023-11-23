@@ -8,3 +8,12 @@
 // "flick" will always be given in lowercase.
 // A list may contain multiple flicks.
 // Switch the boolean value on the same element as the flick itself.
+
+//✅SOLUTION:
+function flickSwitch(arr){
+  if(!arr && arr ==[]){
+    return [];
+ }
+ let sB = true;
+ return arr.map( word => word === "flick"? sB = !sB: sB);
+}
