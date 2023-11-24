@@ -16,3 +16,14 @@ should return:
   {"a": 1, "b": 3}
 ]
 The values will always be numbers, and the properties will always exist.*/
+//SOLUTION:
+function sortList (sortBy = 'a', list= []) {
+  //sorted list
+    if (list.length === 0) {
+     return [];
+   }
+   list.sort(function(a, b) {
+     return b[sortBy] - a[sortBy];
+   });
+   return list;
+ }
