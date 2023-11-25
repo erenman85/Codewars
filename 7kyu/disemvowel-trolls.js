@@ -9,4 +9,15 @@ For example, the string "This website is for losers LOL!" would become "Ths wbst
 
 Note: for this kata y isn't considered a vowel.
  */
-
+//SOLUTION:
+function disemvowel(str) {
+  let vowels = ['a','e','u','i','o'];
+  let strClear = '';
+  let newStr = str.toLowerCase();
+    for (let i = 0; i < str.length; i++) {
+      if (!vowels.includes(newStr[i])){
+        strClear += str[i];
+      }
+    }
+    return strClear;
+  }
