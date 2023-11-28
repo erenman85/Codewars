@@ -8,7 +8,7 @@ but years divisible by 400 are leap years.
 Tested years are in range 1600 ≤ year ≤ 4000.
 
 */
-//✅
+//✅SOLUTION:
   function isLeapYear(year) {
   // TODO
 
